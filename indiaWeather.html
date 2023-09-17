@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main class="pre">
+        <section class="weather-main">
+
+            <div class="city-search">
+                <input type="text" name="search-box" placeholder="Enter City Name" id="search-box">
+               <button id="search-btn2"><img src="/img/search.png" id="search-icon"></button>
+            </div>
+
+            <div class="icon"><i class='bx bx-cloud-drizzle'></i></div>
+
+            <div class="weather-name-temp weather-col">
+                <p class="city-name"></p>
+                <p class="city-temp"></p>
+            </div>
+            <div class="humidity-wind weather-col">
+                <p class="humi"></p>
+                <p class="wind"></p>
+            </div>
+            <div class="time-date weather-col">
+                <p class="city-time-hours" id="city-hours"></p>
+                <p class="city-time-min" id="city-min"></p>
+                <p id="city-sec"></p>
+            </div>
+            
+            <div class="weather-col city-date">
+                <p id="city-days"></p>
+                <p id="city-month"></p>
+                <p id="city-years"></p>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
